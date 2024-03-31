@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+    images: {
+        domains: ['prevalentware-media.s3.amazonaws.com'],
+    }
+};
 
 export default nextConfig;
