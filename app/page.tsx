@@ -1,34 +1,87 @@
 import Image from "next/image";
 import {Button, Icon,  } from '@components/atoms/buttoms';
-import {Title_1, Title_2, Paragraph } from "@components/atoms/text";
+import {Title_1, Title_2_h6, Paragraph, Subtitle_1 } from "@components/atoms/text";
 import {Badge} from "@components/atoms/badge";
 import { Component } from "react";
-
+import { LeftMenu, Rectangle, Certifications} from "@components/molecules/cards";
 
 export default function Home() {
   return (
-    <div className='bg-white h-screen'>
+    <div className='bg-ice h-full w-full'>
       <div >
-        <Button>
-        </Button> 
+        <LeftMenu/>
+
+      
       </div>
    
         
         
-        <Image 
+
+      <div>
+      <Button/> 
+      <Image 
         //src={'http://prevalentware-media.s3.amazonaws.com/cashflow/logo.png'} 
         src={'/foto-perfil2.jpg'}
         alt={"Foto perfil LauraT"} 
         width={200}
         height={200}
         /> 
-      <div>
         <Title_1 
           title= 'Yo soy Laura Tobon estudiante de Ing. de sistemas'/>
-        <Title_2 
+        <Title_2_h6 
           title= 'Estudiante disciplinada, dedicada y responsable, con habilidades blandas como buena comunicacion y expresion oral'/>
-        <Paragraph 
-          text= '' />
+          <Subtitle_1 
+          title= 'hola' />
+          <Paragraph 
+          text= 'hola' />
+      </div>
+
+      <div>
+        <Rectangle 
+          image='/Dev.png' 
+          title='Desarrollo web'
+          text='Blog, Catalogo'>
+        </Rectangle>
+        <Rectangle 
+          image='/UX.png' 
+          title='Diseno UI/UX'
+          text='diseno movil y web'>
+        </Rectangle>
+        <Rectangle 
+          image='/Microphone.png' 
+          title='Diseno de sonido'
+          text='Voces y musica sin CR'>
+        </Rectangle>
+        <Rectangle 
+          image='/Photographer.png' 
+          title='Fotografia'
+          text='Portadas y produccion'>
+        </Rectangle>
+      </div>
+
+      <div>
+        <Certifications 
+          title='Institucion universitaria Pascual Bravo'
+          text='Diploma de tecnologa en mecatronica'
+          time='Graduda______ 27 junio 2006'
+          profile='Planear, organizar, ejecutar y controlar el montaje de sistemas flexibles automáticos en líneas de producción industriales o en nuevos procesos productivos.'  
+          >
+        </Certifications>
+        <div className="overflow-hidden" style={{ top: '1595.09px', left: '49px'}}>
+                    <Image 
+                        src={'/Line32.png'}
+                        alt={"Linea"} 
+                        width={901}
+                        height={150}
+                    />
+        </div>
+        <Certifications 
+          title='Universidad de Antioquia'
+          text='Diploma de Ingeniera'
+          time='Estudiante______ Octavo Semestre'
+          profile='Profesional que combina preparación técnica y formación humanística para el desarrollo de soluciones modernas en el campo de la computación, económicamente viables y ambientalmente sostenibles; modelado matemático, algorítmico y computacional, ingeniería de software e ingeniería de datos. '  
+          >
+        </Certifications>
       </div>
 
       <div>         
@@ -51,17 +104,7 @@ export default function Home() {
         
      
       </div>  
-      <div>
-              <Badge image={'/codingwebDev.png'}>
-              </Badge>
-              <Badge image={'/Microphone.png'}>
-              </Badge>
-              <Badge image={'/Photographer.png'}>
-              </Badge>
-              <Badge image={'/UX.png'}>
-              </Badge>
-      </div>         
- 
+      
     </div>
   );
 }
