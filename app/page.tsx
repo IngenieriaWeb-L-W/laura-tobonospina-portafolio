@@ -1,79 +1,32 @@
 import Image from "next/image";
 import { Button, Icon } from "@components/atoms/buttoms";
-import {Title_1, Title_2_h6,Paragraph, Subtitle_1,} from "@components/atoms/text";
+import {Title_1, Title_2_h6,Paragraph, Subtitle_1,Subtitle_1_h2} from "@components/atoms/text";
 import { Badge } from "@components/atoms/badge";
 import { Component } from "react";
 import {LeftMenuInfo, Rectangle, Certifications,} from "@components/molecules/cards";
-import { LeftMenu } from "@components/organisms/leftm";
+import { LeftMenu, CenterMenu1, CenterMenu2, CenterMenu3 } from "@components/organisms/leftm";
 export default function Home() {
   return (
     <div className="bg-ice h-full w-full">
       <div>
-        <LeftMenuInfo>
+        <LeftMenu>
             
-        </LeftMenuInfo>
-        
-        
+        </LeftMenu>
       </div>
 
-      <div>
-        <Button />
-        <Image
-          //src={'http://prevalentware-media.s3.amazonaws.com/cashflow/logo.png'}
-          src={"/foto-perfil2.jpg"}
-          alt={"Foto perfil LauraT"}
-          width={200}
-          height={200}
-        />
-        <Title_1 title="Yo soy Laura Tobon estudiante de Ing. de sistemas" />
-        <Title_2_h6 title="Estudiante disciplinada, dedicada y responsable, con habilidades blandas como buena comunicacion y expresion oral" />
-        <Subtitle_1 title="hola" />
-        <Paragraph text="hola" />
+      <div className="w-[988px] h-[2811.09px] absolute left-[326px] top-0 px-9 bg-ice justify-center">
+        <CenterMenu1>
+        </CenterMenu1>
+        <CenterMenu2>
+        </CenterMenu2>
+        <CenterMenu3>
+        </CenterMenu3>
       </div>
 
-      <div>
-        <Rectangle
-          image="/Dev.png"
-          title="Desarrollo web"
-          text="Blog, Catalogo"
-        ></Rectangle>
-        <Rectangle
-          image="/UX.png"
-          title="Diseno UI/UX"
-          text="diseno movil y web"
-        ></Rectangle>
-        <Rectangle
-          image="/Microphone.png"
-          title="Diseno de sonido"
-          text="Voces y musica sin CR"
-        ></Rectangle>
-        <Rectangle
-          image="/Photographer.png"
-          title="Fotografia"
-          text="Portadas y produccion"
-        ></Rectangle>
-      </div>
 
-      <div>
-        <Certifications
-          title="Institucion universitaria Pascual Bravo"
-          text="Diploma de tecnologa en mecatronica"
-          time="Graduda______ 27 junio 2006"
-          profile="Planear, organizar, ejecutar y controlar el montaje de sistemas flexibles automáticos en líneas de producción industriales o en nuevos procesos productivos."
-        ></Certifications>
-        <div
-          className="overflow-hidden"
-          style={{ top: "1595.09px", left: "49px" }}
-        >
-          <Image src={"/Line32.png"} alt={"Linea"} width={901} height={150} />
-        </div>
-        <Certifications
-          title="Universidad de Antioquia"
-          text="Diploma de Ingeniera"
-          time="Estudiante______ Octavo Semestre"
-          profile="Profesional que combina preparación técnica y formación humanística para el desarrollo de soluciones modernas en el campo de la computación, económicamente viables y ambientalmente sostenibles; modelado matemático, algorítmico y computacional, ingeniería de software e ingeniería de datos. "
-        ></Certifications>
-      </div>
+
+      
+      
 
       <div>
         <Icon

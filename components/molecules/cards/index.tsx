@@ -3,101 +3,96 @@ import { Subtitle_1_h4, Paragraph } from "@components/atoms/text";
 import Image from "next/image";
 
 export function LeftMenuInfo() {
-    return (
-        <div className="w-[305px] h-[4517px] bg-white justify-center">
- 
-            <div className='w-[150px] h-[242px] justify-center items-center p-2 bg-red'>
-                    <div className=" my-6 rounded-full overflow-hidden" style={{ top: '50px', left: '74px'}}>
-                        <Image 
-                            src={'/foto-perfil2.jpg'}
-                            alt={"Foto perfil LauraT"} 
-                            width={150}
-                            height={150}
-                        />
-                    </div>
-                    <div className='my-5 justify-center'>
-                        <Subtitle_1_h4 title='Laura Tobon'></Subtitle_1_h4>
-                    </div>
-                    <div>
-                        <Paragraph text='Estudiante de Ingenieria'></Paragraph> 
-                    </div>
-                    <div className=" my-6 overflow-hidden" style={{ top: '50px', left: '74px'}}>
-                        <Image 
-                            src={'/Line6.png'}
-                            alt={"Linea"} 
-                            width={220}
-                            height={150}
-                        />
-                    </div>
-                    <div className="w-[220px] h-[25px] flex flex-row justify-between"> 
-                        <Paragraph text='Edad:'></Paragraph>
-                        <Paragraph text='35'></Paragraph>
-                    </div>
-                    <div className="w-[220px] h-[25px] flex flex-row justify-between">
-                        <Paragraph text='Residencia:'></Paragraph>
-                        <Paragraph text='Colombia'></Paragraph>
-                    </div>
-                    <div className="w-[220px] h-[25px] flex flex-row justify-between">
-                        <Paragraph text='Freelance:'></Paragraph>
-                        <Paragraph text='Disponible'></Paragraph>
-                    </div>
-                    <div className="w-[220px] h-[25px] flex flex-row justify-between">
-                        <Paragraph text='Direccion:'></Paragraph> 
-                        <Paragraph text='Antioquia, Medellin'></Paragraph>
-                    </div>
-                    <div className=" my-6 overflow-hidden" style={{ top: '50px', left: '74px'}}>
-                        <Image 
-                            src={'/Line6.png'}
-                            alt={"Linea"} 
-                            width={220}
-                            height={150}
-                        />
-                    </div>
-                    <div className='my-5'>
-                        <Subtitle_1_h4 title='Idiomas'></Subtitle_1_h4>
-                    </div>
-                    <div className="w-[220px] h-[24px] flex flex-row justify-between">
-                        <Paragraph text='Espanol:'></Paragraph>
-                        <Paragraph text='100%'></Paragraph>
-                    </div>
-                    <div className="w-[220px] h-[24px] flex flex-row justify-between">
-                        <Paragraph text='Ingles:'></Paragraph>
-                        <Paragraph text='60%'></Paragraph>
-                    </div>
-                    <div className='my-5'>
-                        <Subtitle_1_h4 title='Lenguajes de programacion'></Subtitle_1_h4>
-                    </div>
-                    <div className="w-[220px] h-[24px] flex flex-row justify-between">
-                        <Paragraph text='Html:'></Paragraph>
-                        <Paragraph text='50%'></Paragraph>
-                    </div>    
-                    <div className="w-[220px] h-[24px] flex flex-row justify-between">
-                        <Paragraph text='Css:'></Paragraph>
-                        <Paragraph text='50%'></Paragraph>
-                    </div>   
-                    <div className="w-[220px] h-[24px] flex flex-row justify-between">
-                        <Paragraph text='JavaScryp:'></Paragraph>
-                        <Paragraph text='70%'></Paragraph>
-                    </div>
-                    <div className="w-[220px] h-[24px] flex flex-row justify-between">
-                        <Paragraph text='C++:'></Paragraph>
-                        <Paragraph text='80%'></Paragraph>
-                    </div>
-
-                    <div className=" my-6 overflow-hidden" style={{ top: '50px', left: '74px'}}>
-                        <Image 
-                            src={'/Line6.png'}
-                            alt={"Linea"} 
-                            width={220}
-                            height={150}
-                        />
-                    </div>
-                    
-            </div>
+  return (
+    <div >
+      <div className="w-[150px] h-[242px] p-2 justify-center items-center">
+        <div
+          className=" my-6 rounded-full overflow-hidden"
+          style={{ top: "50px", left: "74px" }}
+        >
+          <Image
+            src={"/foto-perfil2.jpg"}
+            alt={"Foto perfil LauraT"}
+            width={150}
+            height={150}
+          />
         </div>
-      
+        <div className="my-5 justify-center">
+          <Subtitle_1_h4 title="Laura Tobon"></Subtitle_1_h4>
+        </div>
+        <div>
+          <Paragraph text="Estudiante de Ingenieria"></Paragraph>
+        </div>
+      </div>
 
-    );
+      <div
+        className="overflow-hidden m-8 mt-16"
+        style={{ top: "50px", left: "74px" }}
+      >
+        <Image src={"/Line6.png"} alt={"Linea"} width={220} height={150} />
+      </div>
+
+      <div className="w-[220px] h-[25px] flex flex-row justify-between">
+        <Paragraph text="Edad:"></Paragraph>
+        <Paragraph text="35"></Paragraph>
+      </div>
+      <div className="w-[220px] h-[25px] flex flex-row justify-between">
+        <Paragraph text="Residencia:"></Paragraph>
+        <Paragraph text="Colombia"></Paragraph>
+      </div>
+      <div className="w-[220px] h-[25px] flex flex-row justify-between">
+        <Paragraph text="Freelance:"></Paragraph>
+        <Paragraph text="Disponible"></Paragraph>
+      </div>
+      <div className="w-[220px] h-[25px] flex flex-row justify-between">
+        <Paragraph text="Direccion:"></Paragraph>
+        <Paragraph text="Antioquia, Medellin"></Paragraph>
+      </div>
+      <div
+        className=" my-10 overflow-hidden m-8"
+        style={{ top: "50px", left: "74px" }}
+      >
+        <Image src={"/Line6.png"} alt={"Linea"} width={220} height={150} />
+      </div>
+      <div className="my-5">
+        <Subtitle_1_h4 title="Idiomas"></Subtitle_1_h4>
+      </div>
+      <div className="w-[220px] h-[24px] flex flex-row justify-between">
+        <Paragraph text="Espanol:"></Paragraph>
+        <Paragraph text="100%"></Paragraph>
+      </div>
+      <div className="w-[220px] h-[24px] flex flex-row justify-between">
+        <Paragraph text="Ingles:"></Paragraph>
+        <Paragraph text="60%"></Paragraph>
+      </div>
+      <div className="my-5">
+        <Subtitle_1_h4 title="Lenguajes de programacion"></Subtitle_1_h4>
+      </div>
+      <div className="w-[220px] h-[24px] flex flex-row justify-between">
+        <Paragraph text="Html:"></Paragraph>
+        <Paragraph text="50%"></Paragraph>
+      </div>
+      <div className="w-[220px] h-[24px] flex flex-row justify-between">
+        <Paragraph text="Css:"></Paragraph>
+        <Paragraph text="50%"></Paragraph>
+      </div>
+      <div className="w-[220px] h-[24px] flex flex-row justify-between">
+        <Paragraph text="JavaScryp:"></Paragraph>
+        <Paragraph text="70%"></Paragraph>
+      </div>
+      <div className="w-[220px] h-[24px] flex flex-row justify-between">
+        <Paragraph text="C++:"></Paragraph>
+        <Paragraph text="80%"></Paragraph>
+      </div>
+
+      <div
+        className=" my-10 overflow-hidden m-8"
+        style={{ top: "50px", left: "74px" }}
+      >
+        <Image src={"/Line6.png"} alt={"Linea"} width={220} height={150} />
+      </div>
+    </div>
+  );
 }
 
 export function Rectangle({
@@ -110,16 +105,16 @@ export function Rectangle({
   text: string;
 }) {
   return (
-    <div className="w-[310px] h[225px] justify-center items-center p-2 sm:items-center bg-white">
+    <div className="w-[310px] h[225px] items-center bg-white">
       <div
-        className=" my-6 justify-center overflow-hidden sm:items-center"
+        className="w-[310px] my-6 overflow-hidden"
         style={{ top: "50px", left: "74px" }}
       >
         <Image src={image} alt={"icono"} width={74} height={74} />
-        <div className="my-5">
+        <div className="w-[310px] my-5">
           <Subtitle_1_h4 title={title}></Subtitle_1_h4>
         </div>
-        <div>
+        <div className="w-[310px] justify-center">
           <Paragraph text={text}></Paragraph>
         </div>
       </div>
