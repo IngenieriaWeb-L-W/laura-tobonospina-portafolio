@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Portafolio profesional Laura Tobón Ospina
 
-Este es una hoja de vida virtual creada con Next.js, Tailwind CSS y REact, donde se evidencian los estudios realizados, habilidadaes y otros detalles profesionales y personals.
+Este es una hoja de vida virtual creada con Next.js, Tailwind CSS y REact, donde se evidencian los estudios realizados, habilidades y otros detalles profesionales y personales.
 
 ## Link desplegado en vercel
 (https://laura-tobonospina-portafolio.vercel.app/)
