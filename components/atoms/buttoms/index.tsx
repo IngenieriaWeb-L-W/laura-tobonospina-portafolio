@@ -1,7 +1,14 @@
-export function Button(){
-    return <button
-    className='base-color w-[154px] h-[51px] rounded-lg text-black font-medium shadow-lg'> HIRE ME {'->'} </button>;
+import React from 'react';
+
+export function Button() {
+  return (
+    <a href="https://www.instagram.com/moradabiker" target="_blank" rel="noopener noreferrer" className="inline-block bg-primary hover:bg-violet-900 text-white font-bold py-2 px-4 rounded shadow-lg">
+  CONTRÁTAME {'->'}
+</a>
+
+  );
 }
+
 
 export function Icon({icon}:{icon:string}) {
     return (

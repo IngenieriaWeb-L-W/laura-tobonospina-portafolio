@@ -18,10 +18,10 @@ export function LeftMenuInfo() {
           />
         </div>
         <div className="my-5 justify-center">
-          <Subtitle_1_h4 title="Laura Tobon"></Subtitle_1_h4>
+          <Subtitle_1_h4 title="Laura Tobón"></Subtitle_1_h4>
         </div>
         <div>
-          <Paragraph text="Estudiante de Ingenieria"></Paragraph>
+          <Paragraph text="Estudiante de Ingeniería"></Paragraph>
         </div>
       </div>
 
@@ -29,7 +29,7 @@ export function LeftMenuInfo() {
         className="overflow-hidden m-8 mt-16"
         style={{ top: "50px", left: "74px" }}
       >
-        <Image src={"/Line6.png"} alt={"Linea"} width={220} height={150} />
+        <Image src={"/Line6.png"} alt={"Línea"} width={220} height={150} />
       </div>
 
       <div className="w-[220px] h-[25px] flex flex-row justify-between">
@@ -45,28 +45,28 @@ export function LeftMenuInfo() {
         <Paragraph text="Disponible"></Paragraph>
       </div>
       <div className="w-[220px] h-[25px] flex flex-row justify-between">
-        <Paragraph text="Direccion:"></Paragraph>
-        <Paragraph text="Antioquia, Medellin"></Paragraph>
+        <Paragraph text="Dirección:"></Paragraph>
+        <Paragraph text="Antioquia, Medellín"></Paragraph>
       </div>
       <div
         className=" my-10 overflow-hidden m-8"
         style={{ top: "50px", left: "74px" }}
       >
-        <Image src={"/Line6.png"} alt={"Linea"} width={220} height={150} />
+        <Image src={"/Line6.png"} alt={"Línea"} width={220} height={150} />
       </div>
       <div className="my-5">
         <Subtitle_1_h4 title="Idiomas"></Subtitle_1_h4>
       </div>
       <div className="w-[220px] h-[24px] flex flex-row justify-between">
-        <Paragraph text="Espanol:"></Paragraph>
+        <Paragraph text="Español:"></Paragraph>
         <Paragraph text="100%"></Paragraph>
       </div>
       <div className="w-[220px] h-[24px] flex flex-row justify-between">
-        <Paragraph text="Ingles:"></Paragraph>
+        <Paragraph text="Inglés:"></Paragraph>
         <Paragraph text="60%"></Paragraph>
       </div>
       <div className="my-5">
-        <Subtitle_1_h4 title="Lenguajes de programacion"></Subtitle_1_h4>
+        <Subtitle_1_h4 title="Lenguajes de programación"></Subtitle_1_h4>
       </div>
       <div className="w-[220px] h-[24px] flex flex-row justify-between">
         <Paragraph text="Html:"></Paragraph>
@@ -143,15 +143,46 @@ export function Certifications({
         left: "46px",
         gap: "0px",
         borderRadius: "1px 0px 0px 0px",
+        
       }}
     >
-      <div className="w-1/3 bg-orange-200 p-4">
+      <div className="w-1/3 bg-white p-4">
         <Subtitle_1_h4 title={title}></Subtitle_1_h4>
         <Paragraph text={time}></Paragraph>
       </div>
-      <div className="w-2/3 bg-orange-200 p-4">
+      <div className="w-2/3 bg-white p-4">
         <Subtitle_1_h4 title={text}></Subtitle_1_h4>
         <Paragraph text={profile}></Paragraph>
+      </div>
+    </div>
+  );
+}
+
+export function RectanglePortfolio({
+  image,
+  title,
+  text,
+  link,
+}: {
+  image: string;
+  title: string;
+  text: string;
+  link: string;
+}) {
+  return (
+    <div className="w-[310px] h[474px] items-center bg-white">
+      <div
+        className="w-[310px] h-[300] absolute top-0 my-6 ">
+        <Image src={image} alt={"muestra"} width={310} height={300} />
+        <div className="w-[249px] h-[22px] absolute left-[25px] top-[325px] ">
+          <Subtitle_1_h4 title={title}></Subtitle_1_h4>
+        </div>
+        <div className="w-[268px] h-[70px] absolute left-[25px] top-[355px]">
+          <Paragraph text={text}></Paragraph>
+        </div>
+        <div className="w-[119px] h-[24px] absolute left-[25px] top-[434px] ">
+          <Subtitle_1_h4 title={link}></Subtitle_1_h4>
+        </div>
       </div>
     </div>
   );
