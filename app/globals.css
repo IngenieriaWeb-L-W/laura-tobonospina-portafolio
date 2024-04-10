@@ -40,3 +40,33 @@ body {
     text-wrap: balance;
   }
 }
+.tooltip-button {
+  display: inline-block;
+  background-color: #FFB400;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  position: relative; /* Necesario para el posicionamiento del tooltip */
+}
+
+.tooltip-button .tooltip-text {
+  visibility: hidden; /* Ocultar el texto del letrero por defecto */
+  width: 120px;
+  background-color: #8a8686;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Posicionamiento del tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px; /* Centrar el tooltip */
+}
+
+.tooltip-button:hover .tooltip-text {
+  visibility: visible; /* Mostrar el texto del letrero cuando se pasa el mouse sobre el botón */
+}
