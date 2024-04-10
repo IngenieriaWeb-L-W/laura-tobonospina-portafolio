@@ -1,20 +1,19 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Portafolio profesional Laura Tobón Ospina
 
-First, run the development server:
+Este es una hoja de vida virtual creada con Next.js, Tailwind CSS y REact, donde se evidencian los estudios realizados, habilidadaes y otros detalles profesionales y personals.
+
+## Link desplegado en vercel
+(https://laura-tobonospina-portafolio.vercel.app/)
+
+## Para correrlo por consola desde Visual Studio Code
 
 ```bash
-npm run dev
-# or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open (https://laura-tobonospina-portafolio.vercel.app/) with your browser to see the result.
+
+
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
