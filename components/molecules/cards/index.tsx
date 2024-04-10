@@ -149,11 +149,11 @@ export function Certifications({
         
       }}
     >
-      <div className="w-1/3 bg-white p-4">
+      <div className="w-1/3 bg-white p-4 my-5">
         <Subtitle_1_h4 title={title}></Subtitle_1_h4>
         <Paragraph text={time}></Paragraph>
       </div>
-      <div className="w-2/3 bg-white p-4">
+      <div className="w-2/3 bg-white p-4 my-5">
         <Subtitle_1_h4 title={text}></Subtitle_1_h4>
         <Paragraph text={profile}></Paragraph>
       </div>
@@ -166,11 +166,13 @@ export function RectanglePortfolio({
   title,
   text,
   link,
+  url
 }: {
   image: string;
   title: string;
   text: string;
   link: string;
+  url: string;
 }) {
   return (
     <div className="w-[310px] h[474px] items-center bg-white">
@@ -184,7 +186,9 @@ export function RectanglePortfolio({
           <Paragraph text={text}></Paragraph>
         </div>
         <div className="w-[119px] h-[24px] absolute left-[25px] top-[434px] ">
+        <a href={url}>
           <Subtitle_1_h4 title={link}></Subtitle_1_h4>
+        </a>
         </div>
       </div>
     </div>

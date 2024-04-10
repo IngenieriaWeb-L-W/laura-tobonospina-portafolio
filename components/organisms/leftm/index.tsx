@@ -75,7 +75,7 @@ export function CenterMenu2() {
         ></Rectangle>
       </div>
 
-      <div className="w-[970px] absolute top-[400px] left-[9px] flex flex-row justify-around">
+      <div className="w-[970px] absolute top-[400px] left-[9px] flex flex-row justify-around justify-items-center">
         <Rectangle
           image="/Microphone.png"
           title="Diseño de sonido"
@@ -111,8 +111,8 @@ export function CenterMenu3() {
         ></Certifications>
 
         <div
-          className="overflow-hidden"
-          style={{ top: "1595.09px", left: "49px" }}
+          className="overflow-hidden absolute top-[150px] left-[10px]"
+          
         >
           <Image src={"/Line32.png"} alt={"Línea"} width={901} height={150} />
         </div>
@@ -124,8 +124,8 @@ export function CenterMenu3() {
         ></Certifications>
 
         <div
-          className="overflow-hidden"
-          style={{ top: "1595.09px", left: "49px" }}
+          className="overflow-hidden absolute top-[320px] left-[10px]"
+          
         >
           <Image src={"/Line32.png"} alt={"Línea"} width={901} height={150} />
         </div>
@@ -156,6 +156,7 @@ export function CenterMenu4() {
           <RectanglePortfolio
             image="/1.jpg"
             link= "Learn more >"
+            url="https://blog.hubspot.es/website/que-es-crud"
             title="Creación de usuarios"
             text="Desarrollo una base para que los usuarios puedan generar credenciales de acceso a una aplicación móvil"
           ></RectanglePortfolio>
@@ -164,6 +165,7 @@ export function CenterMenu4() {
           <RectanglePortfolio
             image="/2.jpg"
             link= "Learn more >"
+            url="https://www.cyberclick.es/numerical-blog/que-es-un-ecommerce-tipos-como-crearlo-y-ejemplos"
             title="e-comerce"
             text="Se desarrolla una ventana de visualización virtual para negocios"
           ></RectanglePortfolio>
@@ -172,6 +174,7 @@ export function CenterMenu4() {
           <RectanglePortfolio
             image="/3.jpg"
             link= "Learn more >"
+            url="https://github.com/lauratobon/mobe_BE"
             title="Muro de calificaciones"
             text="Se desarrolla una estrategia en donde los usuarios califican el servicio de los negocios"
           ></RectanglePortfolio>
@@ -180,6 +183,7 @@ export function CenterMenu4() {
           <RectanglePortfolio
             image="/4.jpg"
             link= "Learn more >"
+            url="https://github.com/lauratobon/mobe_BE"
             title="Espacio de comentarios"
             text="Se desarrolla un espacio donde se pueden leer los comentarios de los usuarios y visualizar las calificaciones"
           ></RectanglePortfolio>
