@@ -18,7 +18,7 @@ import {
 
 export function LeftMenu() {
   return (
-    <div className="w-[305px] h-[2811.09px] bg-white justify-center">
+    <div className="w-[305px] h-[2811.09px] absolute top-0 left-0 bg-white justify-center">
       <LeftMenuInfo></LeftMenuInfo>
     </div>
   );
