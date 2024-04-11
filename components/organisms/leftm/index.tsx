@@ -16,21 +16,30 @@ import {
   RectanglePortfolio,
 } from "@components/molecules/cards";
 
+/**
+ * LeftMenu es un componente funcional que representa la sección de menú izquierdo de la aplicación.
+ * No recibe parámetros y devuelve un elemento JSX que representa el menú izquierdo.
+ * Este componente se utiliza para mostrar el contenido del menú izquierdo, que incluye información sobre el usuario y enlaces a diferentes secciones de la aplicación.
+ * @returns {JSX.Element} Un elemento JSX que representa la sección de menú izquierda.
+ */
 export function LeftMenu() {
   return (
     <div className="w-[305px] h-[2811.09px] absolute top-0 left-0 bg-white justify-center">
-      <LeftMenuInfo></LeftMenuInfo>
+      <LeftMenuInfo />
     </div>
   );
 }
 
-export function CenterMenu1() {
+/**
+ * @description Esta función renderiza el componente CenterMenu1.
+ * @returns JSX.Element - El componente JSX renderizado para CenterMenu1.
+ */
+export function CenterMenu1(): JSX.Element {
   return (
     <div className="w-[970px] h-[467.09px] absolute left-0 top-0 px-9 bg-white justify-center">
       <div className="absolute top-[342px] left-[69px]">
         <Button />
       </div>
-
       <div className="absolute top-[100px] left-[601px]">
         <Image
           src={"/foto-perfil2.jpg"}
@@ -39,161 +48,174 @@ export function CenterMenu1() {
           height={400}
         />
       </div>
-
       <div className="w-[500px] h-[118px] absolute top-[93px] left-[69px]">
         <Title_1 title="Yo soy Laura Tobón estudiante de Ing. de sistemas" />
       </div>
-
       <div className="w-[424px] h-[88px] absolute top-[250px] left-[69px]">
-        <Title_2_h6 title="Estudiante disciplinada, dedicada y responsable, con habilidades blandas como buena comunicación y expresion oral" />
+        <Title_2_h6 title="Estudiante disciplinada, dedicada y responsable, con habilidades blandas como buena comunicación y expresión oral" />
       </div>
     </div>
   );
 }
 
-export function CenterMenu2() {
+/**
+ * @description Esta función renderiza el componente CenterMenu2.
+ * @returns Un elemento JSX que representa el componente CenterMenu2.
+ */
+export function CenterMenu2(): JSX.Element {
   return (
     <div className="w-[970px] h-[653px] absolute left-0 top-[509px] px-9 bg-ice justify-center">
       <div className="w-[300px] h-[40px] top-[0px] absolute left-[387px] text-center">
         <Subtitle_1_h2 title="Mis conocimientos" />
       </div>
-
       <div className="w-[438px] h-[68px] absolute top-[65.09px] left-[320px] text-center">
         <Paragraph text="Habilidades multidisciplinarias que permiten desarrollos competitivos y completos desde diferentes abordajes" />
       </div>
-
       <div className="w-[970px] absolute top-[150px] left-[9px] flex flex-row justify-around">
         <Rectangle
           image="/Dev.png"
           title="Desarrollo web"
           text="Blog, Catálogo"
-        ></Rectangle>
+        />
         <Rectangle
           image="/UX.png"
           title="Diseño UI/UX"
           text="diseño móvil y web"
-        ></Rectangle>
+        />
       </div>
-
       <div className="w-[970px] absolute top-[400px] left-[9px] flex flex-row justify-around justify-items-center">
         <Rectangle
           image="/Microphone.png"
           title="Diseño de sonido"
           text="Voces y música sin CR"
-        ></Rectangle>
+        />
         <Rectangle
           image="/Photographer.png"
           title="Fotografía"
           text="Portadas y producción"
-        ></Rectangle>
+        />
       </div>
     </div>
   );
 }
 
+/**
+ * @description Este componente representa la sección CenterMenu3, que es parte de la estructura principal del layout.
+ * @returns {JSX.Element} El elemento JSX que representa al componente CenterMenu3.
+ */
 export function CenterMenu3() {
   return (
     <div className="w-[970px] h-[815px] absolute left-0 top-[1204px] px-9 bg-ice justify-center">
-      <div className="w-[158] h-[40px] absolute top-[0px] left-[406px] text-center">
+      <div className="w-[158px] h-[40px] absolute top-[0px] left-[406px] text-center">
         <Subtitle_1_h2 title="Educación" />
       </div>
-
       <div className="w-[438px] h-[68px] absolute top-[65.09px] left-[275px] text-center">
         <Paragraph text="Formada como tecnóloga, con énfasis en investigación aplicada, ahora preparándome como ingeniera" />
       </div>
-
       <div className="w-[970px] h-[632px] absolute top-[183.09px] left-[46px] bg-white">
         <Certifications
           title="Institución universitaria Pascual Bravo"
           text="Diploma de tecnóloga en mecatrónica"
           time="Graduda ______ 27 junio 2006"
           profile="Planear, organizar, ejecutar y controlar el montaje de sistemas flexibles automáticos en líneas de producción industriales o en nuevos procesos productivos."
-        ></Certifications>
-
+        />
         <div
           className="overflow-hidden absolute top-[150px] left-[10px]"
-          
         >
-          <Image src={"/Line32.png"} alt={"Línea"} width={901} height={150} />
+          <Image
+            src={"/Line32.png"}
+            alt={"Línea"}
+            width={901}
+            height={150}
+          />
         </div>
         <Certifications
           title="Universidad de Antioquia"
           text="Semestres de Ingeniería electrónica"
           time="En pausa ______ quinto Semestre"
           profile="Profesional que combina preparación técnica y formación humanística para el desarrollo de soluciones modernas en el campo de la electrónica, económicamente viables y ambientalmente sostenibles; diseño de circuitos, ingeniería de control y automatización. "
-        ></Certifications>
-
+        />
         <div
           className="overflow-hidden absolute top-[320px] left-[10px]"
-          
         >
-          <Image src={"/Line32.png"} alt={"Línea"} width={901} height={150} />
+          <Image
+            src={"/Line32.png"}
+            alt="Línea"
+            width={901}
+            height={150}
+          />
         </div>
         <Certifications
           title="Universidad de Antioquia"
           text="Diploma de Ingeniera de sistemas"
           time="Estudiante ______ Octavo Semestre"
           profile="Profesional que combina preparación técnica y formación humanística para el desarrollo de soluciones modernas en el campo de la computación, económicamente viables y ambientalmente sostenibles; modelado matemático, algorítmico y computacional, ingeniería de software e ingeniería de datos. "
-        ></Certifications>
+        />
       </div>
     </div>
   );
 }
 
-export function CenterMenu4() {
+/**
+ * @description Esta función representa el componente CenterMenu4, que es una sección de la estructura principal.
+ * @returns {JSX.Element} El componente JSX que representa a CenterMenu4.
+ */
+export function CenterMenu4(): JSX.Element {
   return (
     <div className="w-[970px] h-[648px] absolute left-0 top-[2061px] px-9 bg-ice justify-center">
       <div className="w-[300px] h-[40px] absolute top-[0px] left-[380px] text-center">
         <Subtitle_1_h2 title="Portafolio" />
       </div>
-
       <div className="w-[438px] h-[68px] absolute top-[73px] left-[266px] text-center">
-        <Paragraph text="Acá se presentan algunas secciones de un desarrollo elaborado en varias etapas, guiadas por actividades académicas" />
+        <Paragraph text="Aquí se presentan algunas secciones de un desarrollo realizado en varias etapas, guiadas por actividades académicas" />
       </div>
-
       <div className="w-[970px] h-[510px] absolute top-[150px] left-[9px] flex flex-row justify-between overflow-x-scroll overflow-y-hidden ">
         <div className="w 1/4 mx-8 bg-white">
           <RectanglePortfolio
             image="/1.jpg"
-            link= "Learn more >"
+            link="Learn more >"
             url="https://blog.hubspot.es/website/que-es-crud"
             title="Creación de usuarios"
-            text="Desarrollo una base para que los usuarios puedan generar credenciales de acceso a una aplicación móvil"
-          ></RectanglePortfolio>
+            text="Se desarrolla una base para que los usuarios puedan generar credenciales de acceso a una aplicación móvil"
+          />
         </div>
         <div className="w 1/4 mx-8 bg-white">
           <RectanglePortfolio
             image="/2.jpg"
-            link= "Learn more >"
+            link="Learn more >"
             url="https://www.cyberclick.es/numerical-blog/que-es-un-ecommerce-tipos-como-crearlo-y-ejemplos"
-            title="e-comerce"
+            title="e-commerce"
             text="Se desarrolla una ventana de visualización virtual para negocios"
-          ></RectanglePortfolio>
+          />
         </div>
         <div className="w 1/4 mx-8 bg-white">
           <RectanglePortfolio
             image="/3.jpg"
-            link= "Learn more >"
+            link="Learn more >"
             url="https://github.com/lauratobon/mobe_BE"
             title="Muro de calificaciones"
             text="Se desarrolla una estrategia en donde los usuarios califican el servicio de los negocios"
-          ></RectanglePortfolio>
+          />
         </div>
         <div className="w 1/4 mx-8 bg-white">
           <RectanglePortfolio
             image="/4.jpg"
-            link= "Learn more >"
+            link="Learn more >"
             url="https://github.com/lauratobon/mobe_BE"
             title="Espacio de comentarios"
             text="Se desarrolla un espacio donde se pueden leer los comentarios de los usuarios y visualizar las calificaciones"
-          ></RectanglePortfolio>
+          />
         </div>
       </div>
     </div>
   );
 }
 
-export function RigthMenu() {
+/**
+ * @description Esta función representa el componente RightMenu, que es una sección de la estructura principal.
+ * @returns {JSX.Element} El componente JSX que representa a RightMenu.
+ */
+export function RightMenu() {
   return (
     <div>
       <div className="w-[47px] h-[22px] absolute top-[10px] left-[25px] text-center">
@@ -242,11 +264,15 @@ export function RigthMenu() {
   );
 }
 
+/**
+ * @description Esta función representa el componente Footer, que es parte de la estructura principal de la aplicación.
+ * @returns {JSX.Element} El componente Footer, que contiene una nota de copyright.
+ */
 export function Footer() {
   return (
     <div className="w-[970px] h-[60px] absolute left-[9px] top-[2751.09px] bg-white">
       <div className="w-[251px] h-[24px] absolute left-[371px] top-[18px]">
-        <Paragraph text="Todos los derechos reservados 2024"></Paragraph>
+        <Paragraph text="Todos los derechos reservados 2024" />
       </div>
     </div>
   );

@@ -1,9 +1,9 @@
 /**
- * A React component that renders a title with the given title.
+ * Un componente de React que representa un título con el título dado.
  *
- * @param {string} title - The text to be displayed as the title.
+ * @param {string} title - El texto que se mostrará como título.
  *
- * @returns {JSX.Element} - A JSX element representing the title.
+ * @returns {JSX.Element} - Un elemento JSX que representa el título.
  */
 export function Title_1({title} : { title: string} ) {
     return (
@@ -12,11 +12,11 @@ export function Title_1({title} : { title: string} ) {
 }
 
 /**
- * A React component that renders a subtitle with the given title.
+ * Un componente de React que representa un título con el título dado.
  *
- * @param {string} title - The text to be displayed as the subtitle.
+ * @param {string} title - El texto que se mostrará como subtítulo.
  *
- * @returns {JSX.Element} - A JSX element representing the subtitle.
+ * @returns {JSX.Element} - Un elemento JSX que representa el subtítulo.
  */
 export function Title_2_h6({ title }: { title: string }) {
   return (
@@ -25,11 +25,11 @@ export function Title_2_h6({ title }: { title: string }) {
 }
 
 /**
- * A React component that renders a subtitle with the given title.
+ * Un componente de React que representa un título con el título dado.
  *
- * @param {string} title - The text to be displayed as the subtitle.
+ * @param {string} title - El texto que se mostrará como subtítulo.
  *
- * @returns {JSX.Element} - A JSX element representing the subtitle.
+ * @returns {JSX.Element} - Un elemento JSX que representa el subtítulo.
  */
 export function Subtitle_1({ title }: { title: string }) {
   return (
@@ -37,11 +37,11 @@ export function Subtitle_1({ title }: { title: string }) {
   );
 }
 /**
- * A React component that renders a subtitle with the given title.
+ * Un componente de React que representa un título con el título dado.
  *
- * @param {string} title - The text to be displayed as the subtitle.
+ * @param {string} title - El texto que se mostrará como subtítulo.
  *
- * @returns {JSX.Element} - A JSX element representing the subtitle.
+ * @returns {JSX.Element} - Un elemento JSX que representa el subtítulo.
  */
 export function Subtitle_1_h4({title} : { title: string} ) {
     return (
@@ -49,11 +49,11 @@ export function Subtitle_1_h4({title} : { title: string} ) {
     )
 }
 /**
- * A React component that renders a subtitle with the given title.
+ * Un componente de React que representa un título con el título dado.
  *
- * @param {string} title - The text to be displayed as the subtitle.
+ * @param {string} title - El texto que se mostrará como subtítulo.
  *
- * @returns {JSX.Element} - A JSX element representing the subtitle.
+ * @returns {JSX.Element} Un elemento JSX que representa el subtítulo.
  */
 export function Subtitle_1_h2({title} : { title: string} ) {
     return (
@@ -61,11 +61,11 @@ export function Subtitle_1_h2({title} : { title: string} ) {
     )
 }
 /**
- * A React component that renders a paragraph with the given text.
+ * Un componente de React que representa un título con el título dado.
  *
- * @param {string} text - The text to be displayed as the paragraph.
+ * @param {string} text - TEl texto que se mostrará como el párrafo.
  *
- * @returns {JSX.Element} - A JSX element representing the paragraph.
+ * @returns {JSX.Element} - Un elemento JSX que representa el párrafo.
  */
 export function Paragraph({text} : { text: string} ) {
     return (
