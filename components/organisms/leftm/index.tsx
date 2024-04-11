@@ -169,6 +169,7 @@ export function CenterMenu4(): JSX.Element {
       <div className="w-[438px] h-[68px] absolute top-[73px] left-[266px] text-center">
         <Paragraph text="Aquí se presentan algunas secciones de un desarrollo realizado en varias etapas, guiadas por actividades académicas" />
       </div>
+
       <div className="w-[970px] h-[510px] absolute top-[150px] left-[9px] flex flex-row justify-between overflow-x-scroll overflow-y-hidden ">
         <div className="w 1/4 mx-8 bg-white">
           <RectanglePortfolio

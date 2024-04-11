@@ -215,7 +215,7 @@ export function RectanglePortfolio({
   return (
     <div className="w-[310px] h[474px] items-center bg-white">
       <div
-        className="w-[310px] h-[300] absolute top-0 my-6 "
+        className="w-[310px] h-[300] "
         style={{
           width: "310px",
           height: "300px",
@@ -230,7 +230,7 @@ export function RectanglePortfolio({
           height={300}
         />
         <div
-          className="w-[249px] h-[22px] absolute left-[25px] top-[325px] "
+          className="w-[249px] h-[22px] m-4"
           style={{
             width: "249px",
             height: "22px",
@@ -241,7 +241,7 @@ export function RectanglePortfolio({
           <Subtitle_1_h4 title={title} />
         </div>
         <div
-          className="w-[268px] h-[70px] absolute left-[25px] top-[355px] "
+          className="w-[268px] h-[70px] m-4 "
           style={{
             width: "268px",
             height: "70px",
@@ -252,7 +252,7 @@ export function RectanglePortfolio({
           <Paragraph text={text} />
         </div>
         <div
-          className="w-[119px] h-[24px] absolute left-[25px] top-[434px] "
+          className="w-[119px] h-[24px] m-4"
           style={{
             width: "119px",
             height: "24px",
